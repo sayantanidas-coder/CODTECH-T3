@@ -1,0 +1,282 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Times New Roman', serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    display: block;
+    font-size: 3em;
+    margin-block-start: 0 em;
+    margin-block-end: 0 em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+h2, h3 {
+    margin-bottom: 1rem;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+    font-size: 0.9em;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-size: 1.3em;
+}
+
+/* Parallax Section */
+.parallax {
+    background-image: url('coding.gif');
+    height: 60vh; 
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Content Section */
+.content {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.parallax::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity */
+    z-index: 1;
+}
+
+.parallax {
+    position: relative;
+    z-index: 0;
+}
+
+/* Header Section */
+header {
+    background: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 1rem; 
+}
+
+.profile img {
+    width: 340px; 
+    height: 340px; 
+    border-radius: 100%; 
+    border: 2px solid #f4a261; 
+    object-fit: cover; 
+}
+
+
+.navbar {
+    position: absolute; 
+    top: 0; 
+    right: 1; 
+    padding: 1rem; 
+}
+
+.nav-links {
+    list-style: none; 
+    display: flex; 
+    gap: 1.5rem; 
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f4a261;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 0;
+}
+
+.hero h1 span {
+    color: #f4a261;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 0.5rem;
+    font-size: 1.4em;}
+
+.btn-primary {
+    background: #f4a261;
+}
+
+.btn-secondary {
+    background: #264653;
+}
+
+/* About Section */
+#about {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#about p {
+    margin: 1rem auto;
+    max-width: 600px;
+    font-size: 1.2em;
+}
+
+/* Skills Section */
+#skills {
+    background: #838383;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill {
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.skill i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #f4a261;
+}
+
+/* Projects Section */
+#projects {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.project {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    width: 100%;
+    display: block;
+}
+
+/* Contact Section */
+#contact {
+    background: #333;
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #f4a261;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Footer Section */
+footer {
+    background: #264653;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .social-links a {
+    color: #f4a261;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
