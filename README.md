@@ -76,7 +76,7 @@ The personal portfolio website serves as a digital representation of your profes
 **Technologies Used**
 * HTML:
 Structured the content and layout of the website.
-Semantic tags (e.g., <header>, <section>, <footer>) improve accessibility and SEO.
+Semantic tags improve accessibility and SEO.
 
 * CSS:
 Styling of the website, including layout, typography, and animations.
